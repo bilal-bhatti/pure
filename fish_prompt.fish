@@ -125,7 +125,7 @@ function fish_prompt
     end
 
     # Format Git prompt output
-    set prompt $prompt "$pure_color_gray$git_branch_name$git_dirty$pure_color_normal$pure_color_cyan$git_arrows$pure_color_normal "
+    set prompt $prompt "$pure_color_gray$git_branch_name$pure_color_red$git_dirty$pure_color_normal$pure_color_cyan$git_arrows$pure_color_normal "
   end
 
   if test $pure_user_host_location -ne 1
@@ -138,7 +138,9 @@ function fish_prompt
   end
   set prompt $prompt "$pure_color_yellow$command_duration$pure_color_normal"
 
-  set prompt $prompt "\n$color_symbol$pure_symbol_prompt$pure_color_normal "
+  set prompt $prompt "\n"(date "+%H:%M:%S")" "
+
+  set prompt $prompt "$color_symbol$pure_symbol_prompt$pure_color_normal "
 
   echo -e -s $prompt
 
