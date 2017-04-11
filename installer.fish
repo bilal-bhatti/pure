@@ -31,7 +31,7 @@ end
 
 function pure::fetch_source
     printf "\tFetching theme's source"
-    env git clone --depth=1 --quiet https://github.com/rafaelrinaldi/theme-pure.git $PURE_INSTALL_DIR; or begin;
+    env git clone --depth=1 --quiet https://github.com/bilal-bhatti/pure.git $PURE_INSTALL_DIR; or begin;
         printf "%sError: git clone of theme-pure repo failed%s" "$color_error" "$color_normal"
         exit 1
     end
