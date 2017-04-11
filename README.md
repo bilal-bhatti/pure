@@ -83,8 +83,6 @@ set pure_user_host_location 1
 set pure_command_max_exec_time 5
 ```
 
-Kudos to all our awesome [:yellow_heart: contributors :yellow_heart:](../..//graphs/contributors)
-
 ## License
 
 MIT © [Rafael Rinaldi](http://rinaldi.io)
