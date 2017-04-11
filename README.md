@@ -6,6 +6,10 @@
   <img width=585 src=screenshot.png>
 </p>
 
+<p align=center>
+  <img width=400 src=screenshot2.png>
+</p>
+
 ## Changes
 * Display timestamp on the left prompt
 * Display node version on the right prompt, if in node project
