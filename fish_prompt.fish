@@ -37,6 +37,15 @@ __pure_set_default pure_user_host_location 0
 # Max execution time of a process before its run time is shown when it exits
 __pure_set_default pure_command_max_exec_time 5
 
+# Set pager colors
+set fish_pager_color_prefix $pure_color_gray
+set fish_pager_color_completion $pure_color_cyan
+set fish_pager_color_progress $pure_color_yellow
+set fish_pager_color_description $pure_color_gray
+set fish_pager_color_secondary $pure_color_normal
+set fish_color_search_match --background=333333
+set fish_color_autosuggestion normal
+
 function fish_prompt
   # Save previous exit code
   set -l exit_code $status
