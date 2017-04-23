@@ -33,7 +33,6 @@ $ source /tmp/pure_installer.fish; and install_pure
 $ fisher bilal-bhatti/pure
 ```
 
-
 ## Features
 
 * Fully customizable
