@@ -1,4 +1,4 @@
-function __project_node_version --description 'traverse up to find .nvmrc/version file, upto home directory'
+function __project_node_version --description 'traverse up to find .nvmrc/version file'
   set -l path (pwd)
 
   while begin; test "$path" != ""; and not test -e $path/.nvmrc; end
